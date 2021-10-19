@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Toko</title>
+    <link rel="stylesheet" href="../CSS/MainStyle.css">
+    <script src="../JS/script.js" async defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <!-- Bagiak Kiri -->
+        <div class="logo">
+            <a href="Main.html">
+                <img src="../Asset/Nusantara_1.png" width="175px" height="130px">
+            </a>
+        </div>
+
+        <!-- Navigation --> 
+        <div class="navigation">
+            <a href="Product.html">Product</a>
+            <a href="Promo.html">Promo</a>
+            <a href="AboutUs.html">About Us</a>
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <!-- Shopping Cart -->
+        <div class="cart">
+            <a href="./checkout.html">
+                <img src="../Asset/cart(warna putih).png" width="50px" height="50px">
+            </a>
+        </div>
+
+        <!-- Button Login -->
+        <button class="loginlobby" onclick="document.getElementById('id01').style.display='block'">
+            Login
+        </button>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+
+            <form class="modalcontent animate" action="login.php" style="width: 25%;">
+                <!-- Ini Login -->
+                <div class="logindata">
+                    <label for="username">
+                        <b>Username</b>
+                    </label>
+                    <input type="texts" placeholder="Enter Username" name="username" required>
+
+                    <label for="pass">
+                        <b>Password</b>
+                    </label>
+                    <input type="texts" placeholder="Enter Password" name="pass" required>
+
+                    <button class="buttonlogin" type="submit">
+                        <a href="./profiletoko(login).html">Login</a>
+                    </button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+            </form>
+        </div>
+        <!-- Sign-up -->
+        <button class="signUP-btn" onclick="document.getElementById('id02').style.display='block'">
+            Sign Up
+        </button>
+
+        <!-- Ini isi Sign-UP ???? -->
+        <div id="id02" class="modal2">
+            <span onclick="document.getElementById('id02').style.display='none'"
+          class="close2" title="Close Modal">&times;</span>
+
+            <!-- Ini isi Sign-UP ? -->
+          <form class="modalcontent2" action="signup.php" style="width: 25%;">
+            <!-- Ini pop up Sign Up nya -->
+            <div class="signupdata">
+                  <h1>Sign Up</h1>
+                  <hr>
+                  <label for="email">
+                      <b>Email</b>
+                  </label>
+                  <input type="textss" placeholder="Enter Email" name="email" required>
+
+                  <label for="psw">
+                      <b>Password</b>
+                  </label>
+                  <input type="textss" placeholder="Enter Password" name="psw" required>
+
+                  <label for="psw-repeat">
+                      <b>Repeat Password</b>
+                  </label>
+                  <input type="textss" placeholder="Repeat Password" name="psw-repeat" required>
+
+                  <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me
+                  </label>
+
+                  <p>
+                      By Creating an account you agree to our <a href="#" style="color: dodgerblue;">Terms & Privacy</a>
+                  </p>
+
+                  <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">
+                        Cancel
+                    </button>
+                    <button type="submit" class="signup">
+                        Sign Up
+                    </button>
+                  </div>
+              </div>
+          </form>
+        </div>
+    </div>
+
+    <div class="content-profile-toko">
+        <div class="gambar-logo-toko">
+            <img src="../Asset/logotoko.png" alt="">
+        </div>
+        <div class="conten-profile-keterangan">
+            <h2>Nama Toko :</h2>
+            <p>
+                Agung Jaya
+            </p>
+            <h2>Alamat :</h2>
+            <p>
+                JL Alam Sutera Raya Blok JK5 No.99
+            </p>
+            <h2>Email</h2>
+            <p>agungjayaadmin1@gmail.com</p>
+            <h2>No Telp / WA :</h2>
+            <p>+62 8167 0123 123</p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer produk-push">
+        <div class="footer-kiri">
+            <div class="contactus">
+                Contact Us
+            </div>
+            <div class="email">
+                <a href="#email">nusantaramabel@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- ini buat gabungun biar datar -->
+        <div class="footer-kanan">
+            <!-- ntar kita hyperlink ke halaman FAQ  -->
+            <div class="faq"> 
+                <a href="Faq.html">FAQ </a>
+            </div> 
+        </div>
+    </div>
+
+</body>
+</html>
